@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="26" started-at="2016-01-11T08:10:43Z" finished-at="2016-01-11T08:10:43Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="26" started-at="2016-01-11T08:10:43Z" finished-at="2016-01-11T08:10:43Z">
+      <class name="com.guatec.ExampleTest">
+        <test-method status="PASS" signature="testIsOk()[pri:0, instance:com.guatec.ExampleTest@5479e3f]" name="testIsOk" duration-ms="9" started-at="2016-01-11T02:10:43Z" finished-at="2016-01-11T02:10:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsOk -->
+      </class> <!-- com.guatec.ExampleTest -->
+      <class name="com.guatec.KExampleTest">
+        <test-method status="PASS" signature="testGetOk()[pri:0, instance:com.guatec.KExampleTest@2d6d8735]" name="testGetOk" duration-ms="2" started-at="2016-01-11T02:10:43Z" finished-at="2016-01-11T02:10:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetOk -->
+      </class> <!-- com.guatec.KExampleTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

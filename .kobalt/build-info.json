@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "taskName": "mixed-example:compile",
+      "inputChecksum": "007edbfc870b4adfdfbbd80b7621ac4a",
+      "outputChecksum": "4f86ef845425fab07eba3f7d6f0aafec"
+    },
+    {
+      "taskName": "mixed-example-java:compile",
+      "inputChecksum": "56affa2cf83f84e9576b4d67e533a560",
+      "outputChecksum": "4f86ef845425fab07eba3f7d6f0aafec"
+    },
+    {
+      "taskName": "mixed-example-java:compileTest",
+      "inputChecksum": "f1bb2f646f985cf0dd8ec46dbf38a233",
+      "outputChecksum": "7f9d6b4abb0132a7455bd3951fd478dc"
+    },
+    {
+      "taskName": "mixed-example:compileTest",
+      "inputChecksum": "0e53811afecdb2bb9b0e7cfb7ea247ce",
+      "outputChecksum": "5e517d9352a166e6eb5973b8964b8c2e"
+    }
+  ]
+}

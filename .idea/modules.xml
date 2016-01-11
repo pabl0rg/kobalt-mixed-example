@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kobalt/Build.kt.iml" filepath="$PROJECT_DIR$/kobalt/Build.kt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/./mixed-example.iml" filepath="$PROJECT_DIR$/./mixed-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/./mixed-example-java.iml" filepath="$PROJECT_DIR$/./mixed-example-java.iml" />
+    </modules>
+  </component>
+</project>
