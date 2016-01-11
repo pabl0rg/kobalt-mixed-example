@@ -10,6 +10,7 @@ val p = javaProject {
     group = "com.guatec"
     artifactId = name
     version = "0.1"
+    buildDirectory = "javaBuild"
 
     dependenciesTest {
         compile("org.testng:testng:6.9.5")
