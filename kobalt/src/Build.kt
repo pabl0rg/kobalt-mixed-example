@@ -6,19 +6,19 @@ import com.beust.kobalt.plugin.kotlin.*
 val repos = repos()
 
 val p = javaProject {
-    name = "mixed-example-java"
+    name = "mixed-example"
     group = "com.guatec"
     artifactId = name
     version = "0.1"
     buildDirectory = "javaBuild"
 
-    dependenciesTest {
-        compile("org.testng:testng:6.9.5")
+    sourceDirectories {
+        path("src/main/java", "src/main/kotlin")
     }
-}
 
-val k = kotlinProject(p) {
-    name = "mixed-example"
+    sourceDirectoriesTest {
+        path("src/test/java", "src/test/kotlin")
+    }
 
     dependenciesTest {
         compile("org.testng:testng:6.9.5")
