@@ -5,7 +5,7 @@ import com.beust.kobalt.plugin.kotlin.*
 
 val repos = repos()
 
-val p = javaProject {
+val p = kotlinProject {
     name = "mixed-example"
     group = "com.guatec"
     artifactId = name
