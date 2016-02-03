@@ -3,12 +3,12 @@
     {
       "taskName": "mixed-example:compile",
       "inputChecksum": "007edbfc870b4adfdfbbd80b7621ac4a",
-      "outputChecksum": "4f86ef845425fab07eba3f7d6f0aafec"
+      "outputChecksum": "b2f9646c8fa6555826feb63bb586147e"
     },
     {
       "taskName": "mixed-example-java:compile",
-      "inputChecksum": "56affa2cf83f84e9576b4d67e533a560",
-      "outputChecksum": "4f86ef845425fab07eba3f7d6f0aafec"
+      "inputChecksum": "3bb519c56b80244707f1541fdcdc11b9",
+      "outputChecksum": "3672ab278a2e1ac4139a973864b9b8e8"
     },
     {
       "taskName": "mixed-example-java:compileTest",
@@ -18,7 +18,7 @@
     {
       "taskName": "mixed-example:compileTest",
       "inputChecksum": "0e53811afecdb2bb9b0e7cfb7ea247ce",
-      "outputChecksum": "5e517d9352a166e6eb5973b8964b8c2e"
+      "outputChecksum": "4a6dd79a77c8216cfcccc338a385c03a"
     }
   ]
 }
