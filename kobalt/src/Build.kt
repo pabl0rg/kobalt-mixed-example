@@ -20,6 +20,10 @@ val p = javaProject {
         path("src/test/java", "src/test/kotlin")
     }
 
+    dependencies {
+        compile("log4j:log4j:1.2.17")
+    }
+
     dependenciesTest {
         compile("org.testng:testng:6.9.5")
     }

@@ -1,6 +1,6 @@
 package com.guatec;
 
-class Example {
+public class Example {
 	public Example(){
 	}
 	public boolean isOk(){

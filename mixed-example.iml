@@ -11,6 +11,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mixed-example (Compile)" level="project" />
     <orderEntry type="library" scope="TEST" name="mixed-example (Test)" level="project" />
-    <orderEntry type="module" module-name="mixed-example-java" />
+    <orderEntry type="library" name="kobalt.jar" level="project" />
   </component>
 </module>

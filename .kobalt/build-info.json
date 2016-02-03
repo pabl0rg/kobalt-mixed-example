@@ -2,8 +2,8 @@
   "tasks": [
     {
       "taskName": "mixed-example:compile",
-      "inputChecksum": "007edbfc870b4adfdfbbd80b7621ac4a",
-      "outputChecksum": "b2f9646c8fa6555826feb63bb586147e"
+      "inputChecksum": "f3c973c1a8c21fe47a97f1d3139e5ba8",
+      "outputChecksum": "0896cb2a34516579ded8be65cb15c05d"
     },
     {
       "taskName": "mixed-example-java:compile",
@@ -17,8 +17,8 @@
     },
     {
       "taskName": "mixed-example:compileTest",
-      "inputChecksum": "0e53811afecdb2bb9b0e7cfb7ea247ce",
-      "outputChecksum": "4a6dd79a77c8216cfcccc338a385c03a"
+      "inputChecksum": "32ffaee18c3f9b700c66e93987e9a23d",
+      "outputChecksum": "5e517d9352a166e6eb5973b8964b8c2e"
     }
   ]
 }
