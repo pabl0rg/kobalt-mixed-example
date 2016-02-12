@@ -5,12 +5,11 @@ import com.beust.kobalt.plugin.kotlin.*
 
 val repos = repos()
 
-val p = kotlinProject {
+val p = project {
     name = "mixed-example"
     group = "com.guatec"
     artifactId = name
     version = "0.1"
-    buildDirectory = "javaBuild"
 
     sourceDirectories {
         path("src/main/java", "src/main/kotlin")
@@ -22,6 +21,8 @@ val p = kotlinProject {
 
     dependencies {
         compile("log4j:log4j:1.2.17")
+        compile("com.squareup.okio:okio:1.6.0")
+        compile("com.squareup.okhttp:okhttp:2.7.4")
     }
 
     dependenciesTest {
@@ -30,6 +31,7 @@ val p = kotlinProject {
 
     assemble {
         jar {
+            fatJar=true
         }
     }
 }

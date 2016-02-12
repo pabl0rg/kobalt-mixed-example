@@ -2,8 +2,8 @@
   "tasks": [
     {
       "taskName": "mixed-example:compile",
-      "inputChecksum": "f3c973c1a8c21fe47a97f1d3139e5ba8",
-      "outputChecksum": "0896cb2a34516579ded8be65cb15c05d"
+      "inputChecksum": "57826544a3007c0ca014faf3b88efd0b",
+      "outputChecksum": "0b5d1e158490317b4e40c502959622d7"
     },
     {
       "taskName": "mixed-example-java:compile",
