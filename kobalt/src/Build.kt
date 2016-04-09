@@ -10,15 +10,7 @@ val p = project {
     group = "com.guatec"
     artifactId = name
     version = "0.1"
-
-    sourceDirectories {
-        path("src/main/java", "src/main/kotlin")
-    }
-
-    sourceDirectoriesTest {
-        path("src/test/java", "src/test/kotlin")
-    }
-
+    
     dependencies {
         compile("log4j:log4j:1.2.17")
         compile("com.squareup.okio:okio:1.6.0")
