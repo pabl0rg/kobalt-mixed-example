@@ -18,6 +18,8 @@ public class Example {
         httpClient.setReadTimeout(90, TimeUnit.SECONDS);
         Request getAttachment = new Request.Builder().url("https://www.google.com").build();
         Response response = httpClient.newCall(getAttachment).execute();
+
+        KotlinClassThatDependsOnJavaClass kc = new KotlinClassThatDependsOnJavaClass();
     }
 
     public static void main(String[] args) throws Exception {

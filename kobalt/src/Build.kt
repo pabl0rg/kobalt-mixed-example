@@ -23,6 +23,8 @@ val p = project {
         compile("log4j:log4j:1.2.17")
         compile("com.squareup.okio:okio:1.6.0")
         compile("com.squareup.okhttp:okhttp:2.7.4")
+        compile("org.apache.commons:commons-lang3:3.4")
+        compile("org.flywaydb:flyway-core:4.0")
     }
 
     dependenciesTest {
