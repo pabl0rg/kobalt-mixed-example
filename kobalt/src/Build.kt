@@ -15,6 +15,7 @@ val p = project {
     version = "0.1"
 
     dependencies {
+        compile(file("lib/jrobin-1.5.9.jar"))
         compile("log4j:log4j:1.2.17")
         compile("com.squareup.okio:okio:1.6.0")
         compile("com.squareup.okhttp:okhttp:2.7.4")
