@@ -26,14 +26,6 @@ val p = project {
         compile("org.testng:testng:6.9.5")
     }
 
-    test {
-        val quasarDep = DependencyManager.create("co.paralleluniverse:quasar-core:0.7.3", this@project)
-        jvmArgs("-javaagent:${quasarDep.jarFile.get()}", "-Dco.paralleluniverse.fibers.verifyInstrumentation")
-
-        // exclude Integration Tests
-        excludes("**/IT.class", "**/*MapQuestTest.class")
-    }
-
     assemble {
         jar {
             fatJar=true
