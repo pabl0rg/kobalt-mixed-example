@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75a56d74-f187-47c2-ae6b-b099d6f4bfbc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.kobalt/build/buildScript.jar" afterPath="$PROJECT_DIR$/.kobalt/build/buildScript.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kobalt/wrapper/kobalt-wrapper.jar" afterPath="$PROJECT_DIR$/kobalt/wrapper/kobalt-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/kobalt_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/kobalt_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kobalt/Build.kt.iml" afterPath="$PROJECT_DIR$/kobalt/Build.kt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kobalt/src/Build.kt" afterPath="$PROJECT_DIR$/kobalt/src/Build.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kobalt/wrapper/kobalt-wrapper.properties" afterPath="$PROJECT_DIR$/kobalt/wrapper/kobalt-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mixed-example.iml" afterPath="$PROJECT_DIR$/mixed-example.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/guatec/KExample.kt" afterPath="$PROJECT_DIR$/src/main/java/com/guatec/KExample.kt" />
     </list>
     <ignored path="mixed-example.iws" />
@@ -57,21 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Build.kt.iml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Build.kt.iml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kobalt/Build.kt.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KExample.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/guatec/KExample.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1072,14 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kobalt/Build.kt.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/guatec/JavaBaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1143,7 +1116,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/guatec/KExample.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kobalt/Build.kt.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -20,8 +20,9 @@ class KExample{
         fun main(args : Array<String>) {
             val (url, user, password) = args.slice(0..2)
 
+            //must comment-out the next line to build with Kobalt 0.810
             val example = Example()
-            
+
             val flyway = Flyway()
             flyway.setDataSource(url, user, password)
 
