@@ -8,7 +8,7 @@ import java.nio.charset.Charset
 
 val repos = repos("https://dl.bintray.com/kmruiz/maven")
 
-@Task(name = "createVersion", runBefore = arrayOf("compile", "test", "assemble"), runAfter = arrayOf("clean"))
+@Task(name = "createVersion", reverseDependsOn = arrayOf("compile", "test", "assemble"), runAfter = arrayOf("clean"))
 fun taskCreateVersion(project: Project) : TaskResult {
 
     val gitLog = File(".git/logs/HEAD").readLines(Charset.forName("UTF-8"))
@@ -28,7 +28,7 @@ val p = project {
     name = "mixed-example"
     group = "com.guatec"
     artifactId = name
-    version = "1.1.1"
+    version = "1.1.2"
 
     sourceDirectories {
         path("src/main/java", "src/generated/java")
