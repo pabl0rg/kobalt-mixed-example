@@ -1,16 +1,38 @@
 import com.beust.kobalt.*
-import com.beust.kobalt.plugin.packaging.assemble
-import com.beust.kobalt.plugin.java.*
-import com.beust.kobalt.plugin.kotlin.*
+import com.beust.kobalt.api.Project
+import com.beust.kobalt.api.annotation.Task
 import com.beust.kobalt.maven.DependencyManager
+import com.beust.kobalt.plugin.packaging.assemble
+import java.io.File
+import java.nio.charset.Charset
 
 val repos = repos("https://dl.bintray.com/kmruiz/maven")
+
+@Task(name = "createVersion", runBefore = arrayOf("compile", "test", "assemble"), runAfter = arrayOf("clean"))
+fun taskCreateVersion(project: Project) : TaskResult {
+
+    val gitLog = File(".git/logs/HEAD").readLines(Charset.forName("UTF-8"))
+    val gitHash = gitLog[gitLog.lastIndex].split(" ")[1]
+
+    val path = "com/guatec/internal"
+    with(arrayListOf<String>()) {
+        File("src/main/resources/$path/VersionTemplate.txt").forEachLine {
+            add(it.replace("@version@", project.version!!).replace("@gitHash@", gitHash))
+        }
+        File("src/generated/java/$path/Version.java").writeText(joinToString("\n"))
+    }
+    return TaskResult()
+}
 
 val p = project {
     name = "mixed-example"
     group = "com.guatec"
     artifactId = name
-    version = "0.1"
+    version = "1.1.1"
+
+    sourceDirectories {
+        path("src/main/java", "src/generated/java")
+    }
 
     dependencies {
         compile(file("lib/jrobin-1.5.9.jar"))

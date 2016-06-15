@@ -1,0 +1,11 @@
+package com.guatec.internal;
+
+public class Version {
+    public static String getShortVersion(){
+        return "@version@";
+    }
+
+    public static String getVersion(){
+        return "@version@" + "-" + "@gitHash@";
+    }
+}
