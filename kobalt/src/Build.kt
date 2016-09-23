@@ -40,7 +40,9 @@ val p = project {
         compile("com.squareup.okio:okio:1.6.0")
         compile("com.squareup.okhttp:okhttp:2.7.4")
         compile("org.apache.commons:commons-lang3:3.4")
-        compile("org.flywaydb:flyway-core:4.0")
+        compile("com.h2database:h2:jar:1.4.192")
+        //compile("org.flywaydb:flyway-core:4.0")
+        compile(file("lib/flyway-core-0-SNAPSHOT.jar"))
     }
 
     dependenciesTest {
