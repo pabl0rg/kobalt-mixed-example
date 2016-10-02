@@ -6,7 +6,12 @@ import com.beust.kobalt.plugin.packaging.assemble
 import java.io.File
 import java.nio.charset.Charset
 
-val repos = repos("https://dl.bintray.com/kmruiz/maven")
+val repos = repos("https://dl.bintray.com/kmruiz/maven",
+        "http://repository.jetbrains.com/all",
+        "https://dl.bintray.com/cbeust/maven/")
+
+val plugins = plugins("com.beust:kobalt-line-count:0.5")
+
 
 @Task(name = "createVersion", reverseDependsOn = arrayOf("compile", "test", "assemble"), runAfter = arrayOf("clean"))
 fun taskCreateVersion(project: Project) : TaskResult {
