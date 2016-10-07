@@ -45,7 +45,7 @@ val p = project {
         compile("com.h2database:h2:jar:1.4.192")
         //compile("org.flywaydb:flyway-core:4.0")
         compile(file("lib/flyway-core-0-SNAPSHOT.jar"))
-        compile("com.squareup.retrofit:converter-jackson:1.9.0")
+        compile("com.squareup.retrofit:converter-jackson:")
     }
 
     dependenciesTest {
