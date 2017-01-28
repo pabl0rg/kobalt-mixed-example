@@ -45,7 +45,8 @@ val p = project {
         compile("log4j:log4j:1.2.17")
         compile("org.apache.commons:commons-lang3:3.4")
         compile("com.h2database:h2:jar:1.4.192")
-        compile("org.flywaydb:flyway-core:4.0", "com.squareup.okhttp:okhttp:jar:2.7.5",
+        compile("org.flywaydb:flyway-core:4.0", 
+                "com.squareup.okhttp:okhttp:jar:2.7.5",
                 "com.squareup.retrofit2:retrofit:2.1.0",
                 "com.squareup.retrofit2:converter-jackson:2.1.0",
                 "com.squareup.okhttp3:okhttp:3.2.0",
@@ -56,7 +57,7 @@ val p = project {
                 "com.fasterxml.jackson.core:jackson-core:2.7.1",
                 "com.fasterxml.jackson.core:jackson-annotations:2.7.1",
                 "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.1-2"
-)
+        )
     }
 
     dependenciesTest {
