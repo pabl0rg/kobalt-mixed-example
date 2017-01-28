@@ -6,11 +6,13 @@ import com.beust.kobalt.plugin.packaging.assemble
 import java.io.File
 import java.nio.charset.Charset
 
-val repos = repos("https://dl.bintray.com/kmruiz/maven",
-        "http://repository.jetbrains.com/all",
-        "https://dl.bintray.com/cbeust/maven/")
+val bs = buildScript {
+    val repos = repos("https://dl.bintray.com/kmruiz/maven",
+            "http://repository.jetbrains.com/all",
+             "https://dl.bintray.com/cbeust/maven/")
 
-val plugins = plugins("com.beust.kobalt:kobalt-line-count:")
+    val plugins = plugins("com.beust.kobalt:kobalt-line-count:")
+}
 
 @Task(name = "createVersion", reverseDependsOn = arrayOf("compile", "test", "assemble"), runAfter = arrayOf("clean"))
 fun taskCreateVersion(project: Project) : TaskResult {
@@ -43,9 +45,18 @@ val p = project {
         compile("log4j:log4j:1.2.17")
         compile("org.apache.commons:commons-lang3:3.4")
         compile("com.h2database:h2:jar:1.4.192")
-        //compile("org.flywaydb:flyway-core:4.0")
-        compile(file("lib/flyway-core-0-SNAPSHOT.jar"))
-        compile("com.squareup.retrofit:converter-jackson:")
+        compile("org.flywaydb:flyway-core:4.0", "com.squareup.okhttp:okhttp:jar:2.7.5",
+                "com.squareup.retrofit2:retrofit:2.1.0",
+                "com.squareup.retrofit2:converter-jackson:2.1.0",
+                "com.squareup.okhttp3:okhttp:3.2.0",
+                "com.squareup.okio:okio:1.6.0",
+                "org.twitter4j:twitter4j-core:3.0.4",
+                "org.twitter4j:twitter4j-async:3.0.4",
+                "com.fasterxml.jackson.core:jackson-databind:2.7.1",
+                "com.fasterxml.jackson.core:jackson-core:2.7.1",
+                "com.fasterxml.jackson.core:jackson-annotations:2.7.1",
+                "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.1-2"
+)
     }
 
     dependenciesTest {
