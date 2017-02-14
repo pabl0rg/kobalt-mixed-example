@@ -6,6 +6,6 @@ public class Version {
     }
 
     public static String getVersion(){
-        return "1.1.2" + "-" + "d816e52b74cb88eb83842486e79a8acd4841f985";
+        return "1.1.2" + "-" + "2e9b8b0ae2565b7c58de63fad0329b527fa68009";
     }
 }
