@@ -11,7 +11,7 @@ val bs = buildScript {
             "http://repository.jetbrains.com/all",
              "https://dl.bintray.com/cbeust/maven/")
 
-    val plugins = plugins("com.beust.kobalt:kobalt-line-count:")
+    //val plugins = plugins("com.beust.kobalt:kobalt-line-count:")
 }
 
 @Task(name = "createVersion", reverseDependsOn = arrayOf("compile", "test", "assemble"), runAfter = arrayOf("clean"))
