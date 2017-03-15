@@ -1,3 +1,4 @@
 install:
    - echo "Running kobalt publishToMavenLocal"
-   - ./kobaltw clean publishToMavenLocal
+   - rm -rf .kobalt/build
+   - ./kobaltw --log 2 clean publishToMavenLocal
