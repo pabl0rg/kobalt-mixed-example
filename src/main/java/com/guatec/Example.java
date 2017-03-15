@@ -19,7 +19,7 @@ public class Example {
         Request getAttachment = new Request.Builder().url("https://www.google.com").build();
         Response response = httpClient.newCall(getAttachment).execute();
 
-        KotlinClassThatDependsOnJavaClass kc = new KotlinClassThatDependsOnJavaClass();
+        KotlinClassThatExtendsJavaClass kc = new KotlinClassThatExtendsJavaClass();
     }
 
     public static void main(String[] args) throws Exception {
