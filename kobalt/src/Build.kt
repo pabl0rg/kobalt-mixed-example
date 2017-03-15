@@ -7,11 +7,11 @@ import java.io.File
 import java.nio.charset.Charset
 
 val bs = buildScript {
-    val repos = repos("https://dl.bintray.com/kmruiz/maven",
+    repos("https://dl.bintray.com/kmruiz/maven",
             "http://repository.jetbrains.com/all",
              "https://dl.bintray.com/cbeust/maven/")
 
-    //val plugins = plugins("com.beust.kobalt:kobalt-line-count:")
+    plugins("net.thauvin.erik:kobalt-maven-local:")
 }
 
 @Task(name = "createVersion", reverseDependsOn = arrayOf("compile", "test", "assemble"), runAfter = arrayOf("clean"))
