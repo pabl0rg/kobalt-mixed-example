@@ -7,10 +7,6 @@ import java.io.File
 import java.nio.charset.Charset
 
 val bs = buildScript {
-    repos("https://dl.bintray.com/kmruiz/maven",
-            "http://repository.jetbrains.com/all",
-             "https://dl.bintray.com/cbeust/maven/")
-
     plugins("net.thauvin.erik:kobalt-maven-local:")
 }
 
