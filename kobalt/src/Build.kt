@@ -41,6 +41,7 @@ val p = project {
         compile("log4j:log4j:1.2.17")
         compile("org.apache.commons:commons-lang3:3.4")
         compile("com.h2database:h2:jar:1.4.192")
+        exclude("org.jetbrains.kotlin:kotlin-reflect:1.0.6")
         compile("org.flywaydb:flyway-core:4.0", 
                 "com.squareup.okhttp:okhttp:jar:2.7.5",
                 "com.squareup.retrofit2:retrofit:2.1.0",
@@ -49,11 +50,12 @@ val p = project {
                 "com.squareup.okio:okio:1.6.0",
                 "org.twitter4j:twitter4j-core:3.0.4",
                 "org.twitter4j:twitter4j-async:3.0.4",
-                "com.fasterxml.jackson.core:jackson-databind:2.7.1",
-                "com.fasterxml.jackson.core:jackson-core:2.7.1",
-                "com.fasterxml.jackson.core:jackson-annotations:2.7.1",
-                "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.1-2"
-        )
+                "org.jetbrains.kotlin:kotlin-reflect:1.1.0",
+                "org.jetbrains.kotlin:kotlin-stdlib:1.1.0",
+                "com.fasterxml.jackson.core:jackson-databind:2.8.7",
+                "com.fasterxml.jackson.core:jackson-core:2.8.7",
+                "com.fasterxml.jackson.core:jackson-annotations:2.8.7",
+                "com.fasterxml.jackson.module:jackson-module-kotlin:2.8.7")
     }
 
     dependenciesTest {
