@@ -2,6 +2,7 @@ import com.beust.kobalt.*
 import com.beust.kobalt.api.Project
 import com.beust.kobalt.api.annotation.Task
 import com.beust.kobalt.maven.DependencyManager
+import com.beust.kobalt.plugin.application.application
 import com.beust.kobalt.plugin.packaging.assemble
 import java.io.File
 import java.nio.charset.Charset
@@ -51,7 +52,7 @@ val p = project {
                 "org.twitter4j:twitter4j-core:3.0.4",
                 "org.twitter4j:twitter4j-async:3.0.4",
                 "org.jetbrains.kotlin:kotlin-reflect:1.1.0",
-                "org.jetbrains.kotlin:kotlin-stdlib:1.1.0",
+                "org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.1",
                 "com.fasterxml.jackson.core:jackson-databind:2.8.7",
                 "com.fasterxml.jackson.core:jackson-core:2.8.7",
                 "com.fasterxml.jackson.core:jackson-annotations:2.8.7",
@@ -72,4 +73,20 @@ val p = project {
             fatJar=true
         }
     }
+
+    application {
+        mainClass = "com.guatec.Example"
+    }
 }
+
+val dependent = project(p) {
+    name = "depenent-in-same-dir"
+    group = "com.guatec"
+    artifactId = name
+    version = "1.1.2"
+
+    sourceDirectories {
+        path("src/main/java", "src/generated/java")
+    }
+}
+
