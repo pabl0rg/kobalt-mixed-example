@@ -5,10 +5,9 @@
     <output-test url="file://$MODULE_DIR$/kobaltBuild/test-classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/generated/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/kotlin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/kotlin" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/kobaltBuild" />
@@ -25,126 +24,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Kobalt: org.flywaydb:flyway-core:jar:4.0">
+      <library name="Kobalt: org.jetbrains:annotations:jar:13.0">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/flywaydb/flyway-core/4.0/flyway-core-4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Kobalt: log4j:log4j:jar:1.2.17">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Kobalt: com.squareup.okhttp:okhttp:jar:2.7.4">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/com/squareup/okhttp/okhttp/2.7.4/okhttp-2.7.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Kobalt: org.apache.commons:commons-lang3:jar:3.4">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Kobalt: com.squareup.okio:okio:jar:1.6.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/com/squareup/okio/okio/1.6.0/okio-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: javax.inject:javax.inject:jar:1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: aopalliance:aopalliance:jar:1.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: junit:junit:jar:4.10">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/junit/junit/4.10/junit-4.10.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: org.hamcrest:hamcrest-core:jar:1.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: org.apache.ant:ant:jar:1.7.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/apache/ant/ant/1.7.0/ant-1.7.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: com.google.inject:guice:jar:no_aop:4.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/com/google/inject/guice/4.0/guice-4.0-no_aop.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: com.beust:jcommander:jar:1.48">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/com/beust/jcommander/1.48/jcommander-1.48.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: org.apache.ant:ant-launcher:jar:1.7.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="Kobalt: org.beanshell:bsh:jar:2.0b4">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar!/" />
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/jetbrains/annotations/13.0/annotations-13.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -153,7 +35,61 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Kobalt: com.google.guava:guava:jar:16.0.1">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/google/guava/guava/16.0.1/guava-16.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: aopalliance:aopalliance:jar:1.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: javax.inject:javax.inject:jar:1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: org.hamcrest:hamcrest-core:jar:1.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: org.apache.ant:ant-launcher:jar:1.7.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.jetbrains.kotlin:kotlin-stdlib:jar:1.1.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/jetbrains/kotlin/kotlin-stdlib/1.1.1/kotlin-stdlib-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.squareup.okio:okio:jar:1.8.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/squareup/okio/okio/1.8.0/okio-1.8.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -162,7 +98,70 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Kobalt: org.yaml:snakeyaml:jar:1.15">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar!/" />
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: com.beust:jcommander:jar:1.48">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/beust/jcommander/1.48/jcommander-1.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: com.google.inject:guice:jar:no_aop:4.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/google/inject/guice/4.0/guice-4.0-no_aop.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: org.beanshell:bsh:jar:2.0b4">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: junit:junit:jar:4.10">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/junit/junit/4.10/junit-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="Kobalt: org.apache.ant:ant:jar:1.7.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/apache/ant/ant/1.7.0/ant-1.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.jetbrains.kotlin:kotlin-stdlib-jre7:jar:1.1.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/jetbrains/kotlin/kotlin-stdlib-jre7/1.1.1/kotlin-stdlib-jre7-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.squareup.okhttp3:okhttp:jar:3.3.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -171,12 +170,146 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Kobalt: org.testng:testng:jar:6.9.5">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/repository/org/testng/testng/6.9.5/testng-6.9.5.jar!/" />
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/testng/testng/6.9.5/testng-6.9.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="kobalt.jar" level="project" />
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.fasterxml.jackson.module:jackson-module-kotlin:jar:2.8.7">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/fasterxml/jackson/module/jackson-module-kotlin/2.8.7/jackson-module-kotlin-2.8.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.fasterxml.jackson.core:jackson-annotations:jar:2.8.7">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/fasterxml/jackson/core/jackson-annotations/2.8.7/jackson-annotations-2.8.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.fasterxml.jackson.core:jackson-core:jar:2.8.7">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/fasterxml/jackson/core/jackson-core/2.8.7/jackson-core-2.8.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.fasterxml.jackson.core:jackson-databind:jar:2.8.7">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.jetbrains.kotlin:kotlin-stdlib-jre8:jar:1.1.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/jetbrains/kotlin/kotlin-stdlib-jre8/1.1.1/kotlin-stdlib-jre8-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.jetbrains.kotlin:kotlin-reflect:jar:1.1.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/jetbrains/kotlin/kotlin-reflect/1.1.0/kotlin-reflect-1.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.twitter4j:twitter4j-async:jar:3.0.4">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/twitter4j/twitter4j-async/3.0.4/twitter4j-async-3.0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.twitter4j:twitter4j-core:jar:3.0.4">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/twitter4j/twitter4j-core/3.0.4/twitter4j-core-3.0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.squareup.retrofit2:converter-jackson:jar:2.1.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/squareup/retrofit2/converter-jackson/2.1.0/converter-jackson-2.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.squareup.retrofit2:retrofit:jar:2.1.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/squareup/retrofit2/retrofit/2.1.0/retrofit-2.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.squareup.okhttp:okhttp:jar:2.7.5">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.flywaydb:flyway-core:jar:4.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/flywaydb/flyway-core/4.0/flyway-core-4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: com.h2database:h2:jar:1.4.192">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/com/h2database/h2/1.4.192/h2-1.4.192.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: org.apache.commons:commons-lang3:jar:3.4">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Kobalt: log4j:log4j:jar:1.2.17">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.kobalt/cache/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -24,7 +24,7 @@ fun taskCreateVersion(project: Project) : TaskResult {
         }
         File("src/generated/java/$path/Version.java").writeText(joinToString("\n"))
     }
-    return TaskResult()
+    return TaskResult(true)
 }
 
 val p = project {

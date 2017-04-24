@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kobalt/Build.kt.iml" filepath="$PROJECT_DIR$/kobalt/Build.kt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/depenent-in-same-dir.iml" filepath="$PROJECT_DIR$/depenent-in-same-dir.iml" />
       <module fileurl="file://$PROJECT_DIR$/mixed-example.iml" filepath="$PROJECT_DIR$/mixed-example.iml" />
     </modules>
   </component>
