@@ -1,1 +1,3 @@
-CREATE TABLE other ();
+CREATE TABLE other (
+  id int
+);

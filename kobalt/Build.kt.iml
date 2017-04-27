@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="Build.kt" external.linked.project.path="$MODULE_DIR$/.." external.root.project.path="$MODULE_DIR$/.." external.system.id="KOBALT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
+  <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/out/classes" />
     <output-test url="file://$MODULE_DIR$/out/test-classes" />
     <exclude-output />
@@ -10,21 +10,23 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="Kobalt: kobalt-maven-local-0.5.2.jar">
+      <library name="Kobalt: kobalt-maven-local-0.5.3.jar">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/cache/net/thauvin/erik/kobalt-maven-local/0.5.2/kobalt-maven-local-0.5.2.jar!/" />
+          <root url="jar://$USER_HOME$/.kobalt/cache/net/thauvin/erik/kobalt-maven-local/0.5.3/kobalt-maven-local-0.5.3.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Kobalt: com.beust.kobalt:kobalt:jar:1.0.53">
+      <library name="Kobalt: com.beust.kobalt:kobalt:jar:1.0.77">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.kobalt/wrapper/dist/kobalt-1.0.53/kobalt/wrapper/kobalt-1.0.53.jar!/" />
+          <root url="jar://$USER_HOME$/.kobalt/wrapper/dist/kobalt-1.0.77/kobalt/wrapper/kobalt-1.0.77.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.kobalt/wrapper/dist/kobalt-1.0.77/kobalt/wrapper/kobalt-1.0.77-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>

@@ -1,1 +1,3 @@
-CREATE TABLE bob ();
+CREATE TABLE bob (
+  id int
+);

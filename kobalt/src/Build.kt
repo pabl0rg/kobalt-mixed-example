@@ -24,26 +24,30 @@ fun taskCreateVersion(project: Project) : TaskResult {
         }
         File("src/generated/java/$path/Version.java").writeText(joinToString("\n"))
     }
-    return TaskResult(true)
+    return TaskResult()
 }
 
 val p = project {
     name = "mixed-example"
     group = "com.guatec"
     artifactId = name
-    version = "1.1.2"
+    version = "1.12"
 
     sourceDirectories {
         path("src/main/java", "src/generated/java")
     }
 
     dependencies {
+        exclude("org.jetbrains.kotlin:kotlin-reflect:1.0.6", "org.jetbrains.kotlin:kotlin-runtime:1.0.6")
+        compile("org.jetbrains.kotlin:kotlin-reflect:1.1.2", "org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.2")
+
         compile(file("lib/jrobin-1.5.9.jar"))
         compile("log4j:log4j:1.2.17")
         compile("org.apache.commons:commons-lang3:3.4")
         compile("com.h2database:h2:jar:1.4.192")
         exclude("org.jetbrains.kotlin:kotlin-reflect:1.0.6")
-        compile("org.flywaydb:flyway-core:4.0", 
+        compile("com.h2database:h2:1.4.192",
+                "org.flywaydb:flyway-core:4.1.2",
                 "com.squareup.okhttp:okhttp:jar:2.7.5",
                 "com.squareup.retrofit2:retrofit:2.1.0",
                 "com.squareup.retrofit2:converter-jackson:2.1.0",
@@ -73,12 +77,9 @@ val p = project {
             fatJar=true
         }
     }
-
-    application {
-        mainClass = "com.guatec.Example"
-    }
 }
 
+/*
 val dependent = project(p) {
     name = "depenent-in-same-dir"
     group = "com.guatec"
@@ -89,4 +90,4 @@ val dependent = project(p) {
         path("src/main/java", "src/generated/java")
     }
 }
-
+*/
