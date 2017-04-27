@@ -71,15 +71,8 @@ val p = project {
         val quasarDep = DependencyManager.create("co.paralleluniverse:quasar-core:0.7.5")
         jvmArgs("-javaagent:${quasarDep.jarFile.get()}", "-Dco.paralleluniverse.fibers.verifyInstrumentation")
     }
-
-    assemble {
-        jar {
-            fatJar=true
-        }
-    }
 }
 
-/*
 val dependent = project(p) {
     name = "depenent-in-same-dir"
     group = "com.guatec"
@@ -89,5 +82,14 @@ val dependent = project(p) {
     sourceDirectories {
         path("src/main/java", "src/generated/java")
     }
+
+    assemble {
+        jar {
+            fatJar=true
+        }
+    }
+
+    application {
+        mainClass = "com.guatec.Example"
+    }
 }
-*/
