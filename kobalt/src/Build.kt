@@ -77,7 +77,7 @@ val dependent = project(p) {
     name = "depenent-in-same-dir"
     group = "com.guatec"
     artifactId = name
-    version = "1.1.2"
+    version = "1.12"
 
     sourceDirectories {
         path("src/main/java", "src/generated/java")
