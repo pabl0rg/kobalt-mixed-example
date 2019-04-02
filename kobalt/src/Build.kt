@@ -3,6 +3,7 @@ import com.beust.kobalt.api.Project
 import com.beust.kobalt.api.annotation.Task
 import com.beust.kobalt.maven.DependencyManager
 import com.beust.kobalt.plugin.application.application
+import com.beust.kobalt.plugin.kotlin.kotlinCompiler
 import com.beust.kobalt.plugin.packaging.assemble
 import java.io.File
 import java.nio.charset.Charset
@@ -35,6 +36,11 @@ val p = project {
 
     sourceDirectories {
         path("src/main/java", "src/generated/java")
+    }
+
+    kotlinCompiler {
+        version = "1.3.21"
+        args("-jvm-target", "1.8")
     }
 
     dependencies {
